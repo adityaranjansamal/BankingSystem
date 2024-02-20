@@ -37,6 +37,7 @@ public class Secrets {
             encrypt = encrypt + String.valueOf(val);
         }
         hashedpin = encrypt;
-        System.out.println(encrypt);// for debug purposes only. Comment out for security reasons.
+        // System.out.println(encrypt);// for debug purposes only. Comment out for
+        // security reasons.
     }
 }

@@ -9,18 +9,20 @@ public class Manager {
                                                       // mismatch
     static Scanner sc3 = new Scanner(System.in);
     static long man_uid = 0L;
+    static String man_name;
     static String man_mpin;
     static Node head = null, n = null;
-    static Random random = new Random();
     static int call = 0;
 
     public static void menu() {// Manager Available options
-        Manager.man_data();// only invoked once, to create manager for successful run of the program
+        // Manager.man_data();// only invoked once, to create manager for successful run
+        // of the program
         while (true) {
             System.out.println("***Manager Menu***");
             System.out.println("1. Create User Account");
             System.out.println("2. Update Balance of User");
-            System.out.println("3. Logout");
+            System.out.println("3. Display All Accounts Created in Bank");
+            System.out.println("4. Logout");
             System.out.println("Enter a choice");
             Manager.cases_M(sc3.nextInt());
             if (call == 1) {// Logout Case
@@ -41,6 +43,9 @@ public class Manager {
                 Manager.update_balance();
                 break;
             case 3:
+                Manager.display(head);
+                break;
+            case 4:
                 call = 1;
                 break;
             default:
@@ -54,6 +59,8 @@ public class Manager {
         if (man_uid == 0L) {
             System.out.println("Create Manager ID");
             man_uid = sc3.nextLong();
+            System.out.println("Create Manager Name");
+            man_name = stringsc3.nextLine();
             Secrets.generate_mpin();// creates mpin & encrypts the value
             man_mpin = Secrets.hashedpin;// stores the encrypted value
         } else {
@@ -70,7 +77,7 @@ public class Manager {
             System.out.println("Enter your Name");
             n.username = stringsc3.nextLine();
             System.out.println("Creating Account Number....");
-            n.accno = random.nextInt(9_00_000) + 1_00_000;// generate no b/n 1,00,000-9,99,999
+            n.accno = RandomIdGenerator.RandomID();// generate no b/n 1,00,000-9,99,999
             System.out.println("Create a MPIN");
             Secrets.generate_mpin();
             n.hash_pin = Secrets.hashedpin;
@@ -82,7 +89,7 @@ public class Manager {
             System.out.println("Enter your Name");
             newnode.username = stringsc3.nextLine();
             System.out.println("Creating Account Number....");
-            newnode.accno = random.nextInt(9_00_000) + 1_00_000;// generate no b/n 1,00,000-9,99,999
+            newnode.accno = RandomIdGenerator.RandomID();// generate no b/n 1,00,000-9,99,999
             System.out.println("Create a MPIN");
             Secrets.generate_mpin();
             newnode.hash_pin = Secrets.hashedpin;
@@ -118,6 +125,29 @@ public class Manager {
         System.out.println("Name:" + k.username);
         System.out.println("Account Number:" + k.accno);
         System.out.println("Balance:" + k.balance);
+    }
+
+    public static void display(Node k) {
+        Node disp = k;
+        if (k == null) {
+            System.out.println(
+                    "No Accounts Present in THALA Bank! Probably First Run\n Create new User Accounts first\n Good Luck!");
+            return;
+        }
+        String str2 = "";
+        System.out.printf("%s%8s%s%8s%s", "NAME", "", "A/CN", "", "BAL");
+        while (disp != null) {// iterates over the Linked List
+            System.out.println();
+            str2 = disp.username;// sets str2 as username
+            System.out.print(str2);// prints str2
+            space_counter.setspaces(str2);// calls the setspaces() to set exact spaces required for formatting
+            str2 = String.valueOf(disp.accno);// sets str2 as account number
+            System.out.print(str2);// prints str2
+            space_counter.setspaces(str2);// calls the setspaces() to set exact spaces required for formatting
+            System.out.println(disp.balance);// prints balance & jumps to the next Line!
+            disp = disp.next;
+        }
+        System.out.println();
     }
 
 }

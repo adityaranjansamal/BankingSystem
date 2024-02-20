@@ -1,6 +1,14 @@
 import java.util.*;
 
 /*
+ * Author: Aditya Ranjan Samal
+ * Github ID: adityarnsamal
+ * Telegram ID: adityarnsamal
+ * Compiled On: Fedora Linux 39 Workstation Edition x64_86
+ * Java(c) Version: 11
+ * Font Used: JetBrains Mono
+ */
+/*
  * This is the Login Page For the Banking System.
  * This is the Central Control Unit.
  */
@@ -31,6 +39,7 @@ public class Login {
                                                                                  // value matches with the hash stored
                                                                                  // in the databse or not
                                     System.out.println("Manager Login Success!");
+                                    System.out.println("Welcome Manager " + Manager.man_name + "!");
                                     Manager.menu();
                                     break;// while 2 loop break
                                 } else {
@@ -63,6 +72,7 @@ public class Login {
                                                       // in the databse or not
                                 if ((Customer.matchPass(Secrets.hashedpin))) {
                                     System.out.println("Customer Login Success!");
+                                    System.out.println("Welcome " + Customer.temp.username + "!");
                                     Customer.menu2();
                                     break;// while 2 break
                                 } else {
@@ -90,6 +100,9 @@ public class Login {
     }
 
     public static void main(String[] args) {
+        // System.out.println("====WELCOME TO THALA BANK====");
+        faceprint.logo();// Prints the Bank Name
+        System.out.println("First Run! Create Manager First to invoke any functions");
         Manager.man_data();// calling this function at least once beacuse manager is needed to create
                            // customer accounts
         Login.whoami();
