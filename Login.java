@@ -2,7 +2,7 @@ import java.util.*;
 
 /*
  * Author: Aditya Ranjan Samal
- * Github ID: adityarnsamal
+ * Github ID: adityaranjansamal
  * Telegram ID: adityarnsamal
  * Compiled On: Fedora Linux 39 Workstation Edition x64_86
  * Java(c) Version: 11
