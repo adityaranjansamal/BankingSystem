@@ -7,13 +7,12 @@
 # I. User Management:<br>
   1. Users can register for new accounts by providing required information.<br>
   2. The system validates and stores user data securely.<br>
-  3. Users can manage their profiles (Note: Specify if this includes functionalities like viewing/updating 
+  3. Users can manage their profiles (Note: This includes functionalities like viewing/updating 
   personal details).<br><br>
 # II. Financial Transactions:<br>
   1. Users can deposit and withdraw funds from their accounts.<br>
   2. The system performs necessary balance checks and updates accordingly.<br>
-  3. Users can transfer funds between their own accounts or to other users within the system (Note: Specify if 
-  applicable).<br>
+  3. Users can transfer funds between their own accounts or to other users within the system.<br>
   4. Transaction history is maintained for each user account, allowing them to view past activities.<br><br>
 # III. Support System:<br>
 1. Users can submit support requests to the manager.<br>
