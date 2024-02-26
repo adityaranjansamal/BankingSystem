@@ -2,7 +2,7 @@ import java.util.*;
 
 /*
  * Author: Aditya Ranjan Samal
- * Github ID: adityaranjansamal
+ * Github ID: adityarnsamal
  * Telegram ID: adityarnsamal
  * Compiled On: Fedora Linux 39 Workstation Edition x64_86
  * Java(c) Version: 11
@@ -184,6 +184,7 @@ public class Login {
         // Manager.man_data();// calling this function at least once beacuse manager is
         // needed to create
         // customer accounts
+        Test.present_in_LL();// Uncomment this function only if you want to debug
         Login.whoami();
     }
 }
