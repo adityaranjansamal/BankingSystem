@@ -27,7 +27,7 @@
 2. Planning to build a frontend with flutter framework.(beta)<br><br>
 # New Features:<br>
 i) Updated the MPIN Validation procedure for extra security. Now, if a customer types incorrect MPIN for 3 times, the account will be auto-locked & will require Manager's approval to Re-Login!<br>
-ii) Added Test cases for Manager & Customer for debugging. By default 3 Customer Accounts & 1 Manager account is present. But as Account Number is Auto Generated, therefore the 3 default customers will have random account number each time the program is run, unless it is connected to a database for persistent storage! Comment out the Test lines in **Login.java** if you don't want this behaviour. <br><br>
+ii) Added Test cases for Manager & Customer for debugging. By default 3 Customer Accounts & 1 Manager account is present. But as Account Number is Auto Generated, therefore the 3 default customers will have random account number each time the program is run, unless it is connected to a database for persistent storage! Comment out the Test lines in **Login.java** & recompile with javac if you don't want this behaviour. <br><br>
 # Disclaimer:
 
 **Copyright Notice:**<br>
