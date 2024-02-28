@@ -25,7 +25,7 @@
 
 1. Planning to implement a function that, Customers can request Manager to delete their accounts in the bank.(beta)<br>
 2. Planning to build a frontend with flutter framework.(beta)<br><br>
-# New Features:<br>
+# New Features/Bug Fixes:<br>
 1. Updated the MPIN Validation procedure for extra security. Now, if a customer types incorrect MPIN consecutively for 3 times, the account will be auto-locked & will require Manager's approval to Re-Login!<br>
 2. Added Test cases for Manager & Customer for debugging. By default 3 Customer Accounts & 1 Manager account is present. But as Account Number is Auto Generated, therefore the 3 default customers will have random account number each time the program is run, unless it is connected to a database for persistent storage! Comment out the Test lines in the **main method** in **Login.java** & recompile with javac if you don't want this behaviour. <br>
 3. Users can now add mail-id (gmail, yahoo, outlook) are currently supported. They can also Login/Authenticate into Login Portal Using Mail-ID OR Account Number. Users are free to choose!<br>
