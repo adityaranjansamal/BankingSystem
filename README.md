@@ -30,7 +30,7 @@
 2. Added Test cases for Manager & Customer for debugging. By default 3 Customer Accounts & 1 Manager account is present. But as Account Number is Auto Generated, therefore the 3 default customers will have random account number each time the program is run, unless it is connected to a database for persistent storage! Comment out the Test lines in the **main method** in **Login.java** & recompile with javac if you don't want this behaviour. <br>
 3. Users can now add mail-id (gmail, yahoo, outlook) are currently supported. They can also Login/Authenticate into Login Portal Using Mail-ID OR Account Number. Users are free to choose!<br>
 4. Transaction History now stores Withdraw & Deposit Statements as well.<br>
-5. Fixed a **bug** where the Transaction Statement doesn't get reflected in receiver's account. Now the receiver can also view the same transaction statement after payment from sender.<br><br>
+5. Fixed a **bug** where the Transaction Statement didn't get reflected in receiver's account. Now the receiver can also view the same transaction statement after payment from sender.<br><br>
 
 # Disclaimer:
 
