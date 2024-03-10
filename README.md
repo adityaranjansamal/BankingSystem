@@ -1,9 +1,9 @@
 # BANKING SYSTEM (MADE BY ADITYA RANJAN SAMAL)
 # This project is currently unmaintained.
 # Prerequisites:<br>
-(Minimum Requirements: Java(c) Version: 11)<br>
-(OS Required: Windows/MacOS(X)/Linux/Unix/ x86_64)<br>
-You can run the program by executing the Login.java file<br>
+➡️(Minimum Requirements: Java(c) Version: 11)<br>
+➡️(OS Required: Windows/MacOS(X)/Linux/Unix/ x86_64)<br>
+➡️You can run the program by executing the Login.java file<br>
 # Features:<br>
 
 # I. User Management👥:<br>
