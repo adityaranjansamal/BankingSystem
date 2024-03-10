@@ -1,5 +1,5 @@
 # BANKING SYSTEM (MADE BY ADITYA RANJAN SAMAL)
-# This project is currently unmaintained<br>
+# This project is currently unmaintained.<br>
 # Prerequisites:<br>
 (Minimum Requirements: Java(c) Version: 11)<br>
 (OS Required: Windows/MacOS(X)/Linux/Unix/ x86_64)<br>
