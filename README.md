@@ -23,7 +23,7 @@
 # IV. Security🔒:<br>
 1. User passwords are never stored in plain text.<br>
 2. A simple hashing algorithm is used to encrypt and store passwords.<br><br>
-# Additional Notes:<br>
+# Additional Notes📑:<br>
 
 1. Planning to implement a function that, Customers can request Manager to delete their accounts in the bank.(beta)<br>
 2. Planning to build a frontend with flutter framework.(beta)<br><br>
